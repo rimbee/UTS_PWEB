@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | PRADA Official Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <!-- Same header as index.html -->
+    </header>
+
+    <main class="collections-page">
+        <section class="page-header">
+            <div class="container">
+                <h1>Collections</h1>
+                <nav class="breadcrumbs">
+                    <a href="index.html">Home</a> / <span>Collections</span>
+                </nav>
+            </div>
+        </section>
+
+        <section class="collection-filters">
+            <div class="container">
+                <div class="filter-section">
+                    <button class="filter-btn">Category <i class="fas fa-chevron-down"></i></button>
+                    <div class="filter-dropdown">
+                        <ul>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Ready-to-Wear</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <button class="filter-btn">Price <i class="fas fa-chevron-down"></i></button>
+                    <div class="filter-dropdown">
+                        <ul>
+                            <li><a href="#">$0 - $500</a></li>
+                            <li><a href="#">$500 - $1000</a></li>
+                            <li><a href="#">$1000 - $2000</a></li>
+                            <li><a href="#">$2000+</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <button class="filter-btn">Color <i class="fas fa-chevron-down"></i></button>
+                    <div class="filter-dropdown">
+                        <ul>
+                            <li><a href="#">Black</a></li>
+                            <li><a href="#">White</a></li>
+                            <li><a href="#">Red</a></li>
+                            <li><a href="#">Blue</a></li>
+                            <li><a href="#">Green</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sort-section">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-grid">
+            <div class="container">
+                <div class="products-grid">
+                    <!-- Product cards would be generated dynamically in a real implementation -->
+                    <div class="product-card">
+                        <img src="images/collection-1.jpg" alt="Prada Re-Edition 1995 Bag">
+                        <h3>Re-Edition 1995 Bag</h3>
+                        <p class="price">$2,750</p>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/collection-2.jpg" alt="Prada Linea Rossa Jacket">
+                        <h3>Linea Rossa Nylon Jacket</h3>
+                        <p class="price">$1,890</p>
+                        <button class="btn-wishlist"><i class="far fa-heart"></i></button>
+                        <button class="btn-quickview">Quick View</button>
+                    </div>
+                    <!-- More product cards... -->
+                </div>
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal" id="quickViewModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-product-view">
+                <div class="modal-product-images">
+                    <img src="images/collection-1.jpg" alt="Product Image" class="main-image">
+                    <div class="thumbnail-images">
+                        <img src="images/collection-1-thumb1.jpg" alt="Thumbnail 1">
+                        <img src="images/collection-1-thumb2.jpg" alt="Thumbnail 2">
+                        <img src="images/collection-1-thumb3.jpg" alt="Thumbnail 3">
+                    </div>
+                </div>
+                <div class="modal-product-details">
+                    <h2>Re-Edition 1995 Bag</h2>
+                    <p class="price">$2,750</p>
+                    <p class="description">The Prada Re-Edition 1995 bag revives a classic from the archives, reimagined for today with the same timeless appeal.</p>
+                    <div class="size-selector">
+                        <label>Size:</label>
+                        <select>
+                            <option>One Size</option>
+                        </select>
+                    </div>
+                    <div class="color-selector">
+                        <label>Color:</label>
+                        <div class="color-options">
+                            <span class="color-option black active"></span>
+                            <span class="color-option red"></span>
+                            <span class="color-option white"></span>
+                        </div>
+                    </div>
+                    <button class="btn-add-to-bag">Add to Bag</button>
+                    <div class="product-actions">
+                        <a href="#"><i class="far fa-heart"></i> Add to Wishlist</a>
+                        <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
